@@ -36,7 +36,7 @@ if ($request.url.indexOf(vip) != -1){
   "data": {
     "id": "1847643184788062209",
     "userName": "面试鸭4424",
-    "userRole": "vip",
+    "userRole": "user",
     "createTime": "2024-10-19 22:17:17",
     "updateTime": "2024-10-19 22:17:17",
     "shareCode": "ofmrwy",
