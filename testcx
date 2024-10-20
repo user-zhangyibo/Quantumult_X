@@ -11,8 +11,8 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.mianshiya\.com\/api\/user url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
-^https?:\/\/api\.mianshiya\.com\/api\/question_bank\/list_question url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
+^https?:\/\/api\.mianshiya\.com\/api url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
+// ^https?:\/\/api\.mianshiya\.com\/api\/question_bank\/list_question url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
 
 [mitm]
 hostname = api.mianshiya.com
