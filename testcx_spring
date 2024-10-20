@@ -8,7 +8,7 @@
 使用声明：⚠️仅供参考，🈲转载与售卖！
 使用说明：点击登录即可变成至尊VIP。
 
-**************************************
+
 
 [rewrite_local]
 ^https?:\/\/api\.mianshiya\.com\/api\/question_bank\/list_question url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx_spring
