@@ -56,11 +56,11 @@ if ($request.url.indexOf(vip) != -1){
   "message": "ok"
 }
 }
-$done({body : JSON.stringify(chxm1023)});
+// $done({body : JSON.stringify(chxm1023)});
 
 
 if ($request.url.indexOf(vip2) != -1){
-  chxm1024 = {
+  chxm1023 = {
   "code": 0,
   "data": {
     "records": [{
@@ -515,4 +515,4 @@ if ($request.url.indexOf(vip2) != -1){
   "message": "ok"
 }
 }
-$done({body : JSON.stringify(chxm1024)});
+$done({body : JSON.stringify(chxm1023)});
