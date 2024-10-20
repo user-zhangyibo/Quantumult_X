@@ -11,8 +11,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.mianshiya\.com\/api url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
-// ^https?:\/\/api\.mianshiya\.com\/api\/question_bank\/list_question url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
+^https?:\/\/api\.mianshiya\.com\/api\/question_bank\/list_question url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
 
 [mitm]
 hostname = api.mianshiya.com
@@ -24,39 +23,14 @@ var body = $response.body;
 var chxm1023 = JSON.parse(body);
 
 const vip = '/user';
-const vip2 = '/list_question';
+const vip2 = '/question_bank/list_question';
 const ad = '/index';
 const jx = '/urlresult';
 const vipb = '/registryUser';
 const adb = '/getAdvertMsg';
 const jxb = '/GetYqList';
 
-//海绵去水印
-if ($request.url.indexOf(vip) != -1){
-  chxm1023 = {
-  "code": 0,
-  "data": {
-    "id": "1847643184788062209",
-    "userName": "面试鸭4424",
-    "userRole": "VIP",
-    "createTime": "2024-10-19 22:17:17",
-    "updateTime": "2024-10-19 22:17:17",
-    "shareCode": "ofmrwy",
-    "registerPlatform": "miniProgram",
-    "source": "wx",
-    "sourceTime": "2024-10-19 22:17:17",
-    "experience": 0,
-    "inviteNum": 1,
-    "inviteVipNum": 1,
-    "answerNum": 0,
-    "experienceLevel": 1,
-    "payAccount": "",
-    "realName": ""
-  },
-  "message": "ok"
-}
-}
-// $done({body : JSON.stringify(chxm1023)});
+
 
 
 if ($request.url.indexOf(vip2) != -1){
