@@ -1,1 +1,58 @@
-hahh
+/*************************************
+
+项目名称：海绵去水印/功夫去水印
+下载地址：#小程序://海绵去水印/fkz0DxWNzGVwb3A
+下载地址：#小程序://功夫去水印/BDrKc83B8O909Sc
+脚本作者：chxm1023
+电报频道：https://t.me/chxm1023
+使用声明：⚠️仅供参考，🈲转载与售卖！
+使用说明：点击登录即可变成至尊VIP。
+
+**************************************
+
+[rewrite_local]
+^https?:\/\/api\.mianshiya\.com\/api\/user url script-response-body https://raw.githubusercontent.com/user-zhangyibo/Quantumult_X/refs/heads/main/testcx
+
+[mitm]
+hostname = api.mianshiya.com
+
+*************************************/
+
+// 无需更改
+var body = $response.body;
+var chxm1023 = JSON.parse(body);
+
+const vip = '/user';
+const ad = '/index';
+const jx = '/urlresult';
+const vipb = '/registryUser';
+const adb = '/getAdvertMsg';
+const jxb = '/GetYqList';
+
+//海绵去水印
+if ($request.url.indexOf(vip) != -1){
+  chxm1023 = {
+  "code": 0,
+  "data": {
+    "id": "1847643184788062209",
+    "userName": "面试鸭4424",
+    "userRole": "vip",
+    "createTime": "2024-10-19 22:17:17",
+    "updateTime": "2024-10-19 22:17:17",
+    "shareCode": "ofmrwy",
+    "registerPlatform": "miniProgram",
+    "source": "wx",
+    "sourceTime": "2024-10-19 22:17:17",
+    "experience": 0,
+    "inviteNum": 1,
+    "inviteVipNum": 1,
+    "answerNum": 0,
+    "experienceLevel": 1,
+    "payAccount": "",
+    "realName": ""
+  },
+  "message": "ok"
+}
+}
+
+$done({body : JSON.stringify(chxm1023)});
